@@ -1,9 +1,9 @@
 import { Client } from '@paymentsds/mpesa'
 
 const client = new Client({
-   apiKey: process.env.Mpesa_apiKey,        // API Key
-   publicKey: process.env.Mpesa_publicKey,  
-   serviceProviderCode: "171717", // input_ServiceProviderCode
+   apiKey: process.env.Mpesa_ApiKey,        // API Key
+   publicKey: process.env.Mpesa_PublicKey,  
+   serviceProviderCode: process.env.Mpesa_ServiceProviderCode, // input_ServiceProviderCode
 
    origin: 'localhost:8080',
    host: 'localhost:8080',
@@ -12,6 +12,8 @@ const client = new Client({
    verifySSL: false,
    debugging: true,        
 });
+
+console.log(process.env.Mpesa_ApiKey);
 
 
  const set_paymentData = async (from,reference,transaction,amount)=>{

@@ -1,72 +1,23 @@
 {
-  "name": "mpesa",
-  "version": "0.1.0",
+  "name": "VueMpesa",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "node server.js"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@paymentsds/mpesa": "0.1.0-alpha-5",
-    "axios": "^0.18.1",
-    "bootstrap-vue": "^2.16.0",
-    "bootswatch": "^4.5.2",
-    "core-js": "^2.6.11",
-    "crypto": "^1.0.1",
-    "dotenv": "^8.2.0",
-    "dotenv-expand": "^5.1.0",
-    "dotenv-safe": "^6.1.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "vee-validate": "^2.2.15",
-    "vue": "^2.6.11",
-    "vue-jwt-decode": "^0.1.0",
-    "vue-resource": "^1.5.1",
-    "vue-router": "^3.4.3",
-    "vuetify": "^1.5.24",
-    "vuex": "^3.5.1"
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@paymentsds/mpesa": "0.1.0-alpha-7",
+    "nuxt": "^2.14.0",
+    "nuxt-buefy": "^0.3.31",
+    "vuetify": "^2.1.15",
+    "vuetify-loader": "^1.4.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.12.1",
-    "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-service": "^3.12.1",
-    "babel-eslint": "^10.1.0",
-    "dotenv-webpack": "^2.0.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^7.3.1",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.1",
-    "vue-cli-plugin-vuetify": "^0.5.0",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.6.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true,
-      "browser":false
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
 }
