@@ -1,5 +1,5 @@
 <template>
-<div class="details">
+<div>
     <div class="container">
         <div class="row">
             <div class="col-md-12" v-for="(product,index) in products" :key="index">
@@ -27,7 +27,6 @@ import {
 } from '@/services/Mpesa'
 
 export default {
-    name: "details",
     data() {
         return {
             proId: this.$route.params.id,
